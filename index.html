@@ -3,13 +3,69 @@
 <head>
   <title>Daily Diary to MJ</title>
   <meta charset="utf-8">
+  <style>
+    #전체 {
+      display: grid;
+      grid-template-rows: 1fr 4fr;
+      width:800px;
+      height: 600px;
+      margin:0px auto;
+    }
+    #제목 {
+      border:5px;
+      text-align: center;
+      margin:0px;
+      padding:10px;
+      padding-bottom: 30px;
+      font-size: 50px;
+    }
+    #제목 a {
+      color: hotpink;
+      display: grid;
+    }
+    #연도 {
+      border:0px;
+      margin:0px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+    #연도 div {
+      margin: 0px;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      font-size: 40px;
+      line-height: 170px;
+    }
+    a {
+      text-decoration: none;
+      color: pink;
+    }
+    a:visited {
+      color: pink;
+    }
+    #tz {
+      border: 5px violet solid;
+      border-right: 2.5px violet solid;
+    }
+    #to {
+      border: 5px violet solid;
+      border-left: 2.5px violet solid;
+    }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">Year</a></h1>
+  <div id="전체">
+    <h1 id="제목"><a href="index.html">Diary♥</a></h1>
+    <div id="연도">
+      <div id="tz"><a href="2020년.html">2020년</a></div>
+      <div id="to"><a href="2021년.html">2021년</a></div>
+    </div>
+  </div>
+  <!--
   <ol>
     <li><a href="2020년.html">2020년</a></li>
     <li><a href="2021년.html">2021년</a></li>
   </ol>
-  <h2>Hello</h2>
-  <p>일기</p>
+  -->
 </body>
