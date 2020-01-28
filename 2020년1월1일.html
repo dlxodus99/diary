@@ -3,9 +3,66 @@
 <head>
   <title>Daily Diary to MJ</title>
   <meta charset="utf-8">
+  <style>
+    #전체 {
+      display: grid;
+      grid-template-rows: 120px 90px 800px 1000px;
+      width:800px;
+      margin:0px auto;
+      border: 10px solid violet;
+    }
+    h1 {
+      border-bottom: 5px violet solid;
+      text-align: center;
+      margin: 0px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+    h2 {
+      border-top: 5px violet solid;
+      margin: 0px;
+      padding: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 40px;
+      line-height: 45px;
+    }
+    #본문 {
+      border-top: 10px violet solid;
+      border-bottom: 10px violet solid;
+      margin: 0px;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">사랑해♥~</a></h1>
-  <h2>제목</h2>
-  <p>일기</p>
+  <div id="전체">
+    <h1><a href="index.html">사랑해♥~</a></h1>
+    <h2>제목</h2>
+    <p id="본문">일기</p>
+    <p>
+      <div id="disqus_thread"></div>
+      <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://diary-7.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+  </div>
 </body>
